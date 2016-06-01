@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Red hot bits snippets.
+Red hot bits snippets for singleton, default init block and others.
                        DESC
 
   s.homepage         = 'https://github.com/sisoje/RHBSnippetsObjC'
@@ -30,7 +30,7 @@ Red hot bits snippets.
 
   s.ios.deployment_target = '8.0'
 
-  # s.source_files = 'RHBSnippets.h'
+  s.source_files = 'RHBSnippets.h'
   s.public_header_files = 'RHBSnippets.h'
 
   # s.frameworks = 'UIKit', 'MapKit'
