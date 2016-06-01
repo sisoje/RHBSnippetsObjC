@@ -30,9 +30,9 @@ Red hot bits snippets.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '*.h'
-  
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.source_files = 'RHBSnippets.h'
+  s.public_header_files = 'RHBSnippets.h'
+
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
