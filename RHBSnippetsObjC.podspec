@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/sisoje/RHBSnippetsObjC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Lazar Otasevic' => ‘redhotbits@gmail.com’ }
+  s.author           = { 'Lazar Otasevic' => 'redhotbits@gmail.com' }
   s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/redhotbits'
 
