@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RHBSnippetsObjC'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RHBSnippetsObjC.'
+  s.summary          = ‘Snippets for singleton, default init block and others.’
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,24 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/RHBSnippetsObjC'
+  s.homepage         = 'https://github.com/sisoje/RHBSnippetsObjC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Lazar Otasevic' => 'lazar.otasevic@1und1.de' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/RHBSnippetsObjC.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Lazar Otasevic' => ‘redhotbits@gmail.com’ }
+  s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/redhotbits'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = ‘6.0’
 
-  s.source_files = 'RHBSnippetsObjC/Classes/**/*'
+  s.source_files = '**/*'
   
-  # s.resource_bundles = {
-  #   'RHBSnippetsObjC' => ['RHBSnippetsObjC/Assets/*.png']
-  # }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
