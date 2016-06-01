@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RHBSnippetsObjC_Tests' do
+  pod 'RHBSnippetsObjC', :path => '../'
+  
+  
+end
