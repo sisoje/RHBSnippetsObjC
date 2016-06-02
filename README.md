@@ -22,7 +22,7 @@ pod "RHBSnippetsObjC"
 
 ## Author
 
-Lazar Otasevic, lazar.otasevic@1und1.de
+Lazar Otasevic, redhotbits@gmail.com
 
 ## License
 
