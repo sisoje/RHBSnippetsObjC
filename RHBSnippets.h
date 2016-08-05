@@ -9,7 +9,7 @@
 #ifndef RHB_SNIPPETS_H_
 #define RHB_SNIPPETS_H_
 
-#define RHB_SINGLETON_IMPLEMENTATION() +(instancetype)sharedInstance {static dispatch_once_t pred;static id sharedObject;dispatch_once(&pred,^{sharedObject=[self new];});return sharedObject;}
-#define RHB_INIT_IMPLEMENTATION(BLOCK) -(instancetype)init {if (self=[super init]) {BLOCK;} return self;}
+#define RHB_SINGLETON_IMPLEMENTATION() RHB_SINGLETON_IMPLEMENTATION_WITH_NAME(sharedInstance)
+#define RHB_SINGLETON_IMPLEMENTATION_WITH_NAME(NAME) +(instancetype)NAME {static dispatch_once_t pred;static id sharedObject;dispatch_once(&pred,^{sharedObject=[self new];});return sharedObject;}
 
 #endif
