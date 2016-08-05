@@ -5,6 +5,33 @@
 [![License](https://img.shields.io/cocoapods/l/RHBSnippetsObjC.svg?style=flat)](http://cocoapods.org/pods/RHBSnippetsObjC)
 [![Platform](https://img.shields.io/cocoapods/p/RHBSnippetsObjC.svg?style=flat)](http://cocoapods.org/pods/RHBSnippetsObjC)
 
+## Usage
+
+Basically, for now its only used for singleton synthetization. It is used in .m file, and instead of copy pasting this block every time:
+
+	@implementation RHBOrientationUtilities
+	
+	+ (instancetype)sharedInstance {
+   		static id sharedInstance;
+		static dispatch_once_t onceToken;
+		dispatch_once(&onceToken, ^{
+			sharedInstance = [self new];
+		});
+		return sharedInstance;
+	}
+	
+	/// init and other methods ...
+
+You just add this one line:
+
+	@implementation RHBOrientationUtilities
+
+	RHB_SINGLETON_IMPLEMENTATION();
+	
+	/// init and other methods ...
+
+Thats it for now.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
