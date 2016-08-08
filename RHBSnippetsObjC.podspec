@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBSnippetsObjC'
-  s.version          = '0.1.7.1'
+  s.version          = '0.1.7.2'
   s.summary          = 'Snippets for singleton, default init block and others.'
 
 # This description is used to generate tags and improve search results.
@@ -25,8 +25,8 @@ Red hot bits snippets for singleton, default init block and others.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lazar Otasevic' => 'redhotbits@gmail.com' }
-  s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/redhotbits'
+  s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => '0.1.7.2' }
+  s.social_media_url = 'https://twitter.com/redhotbits'
 
   s.ios.deployment_target = '8.0'
 
