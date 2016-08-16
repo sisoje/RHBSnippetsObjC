@@ -18,6 +18,8 @@
 
 #define RHB_IS_IPAD() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define RHB_IS_IPHONE() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define RHB_IS_TV() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomTV)
+#define RHB_IS_CAR_PLAY() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomCarPlay)
 
 #define RHB_INVERSE_255_FLOAT ((CGFloat)1/255)
 #define RHB_UICOLOR_FROM_RGB(RGB) [UIColor colorWithRed:(((RGB) >> 16) & 0xFF)*RHB_INVERSE_255_FLOAT green:(((RGB) >> 8) & 0xFF)*RHB_INVERSE_255_FLOAT blue:((RGB) & 0xFF)*RHB_INVERSE_255_FLOAT alpha:1]
