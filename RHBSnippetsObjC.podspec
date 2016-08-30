@@ -29,6 +29,7 @@ Red hot bits snippets for singleton, UIColor from RGB and others.
   s.social_media_url = 'https://twitter.com/redhotbits'
 
   s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '2.0'   
 
   s.source_files = 'RHBSnippets.h'
   s.public_header_files = 'RHBSnippets.h'
