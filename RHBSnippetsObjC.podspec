@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBSnippetsObjC'
-  s.version          = '0.2'
+  s.version          = '0.2.1'
   s.summary          = 'Snippets for singleton, UIColor from RGB and others.'
 
 # This description is used to generate tags and improve search results.
@@ -25,11 +25,13 @@ Red hot bits snippets for singleton, UIColor from RGB and others.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lazar Otasevic' => 'redhotbits@gmail.com' }
-  s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => '0.2' }
+  s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => '0.2.1' }
   s.social_media_url = 'https://twitter.com/redhotbits'
 
+  s.watchos.deployment_target = '2.0'
   s.ios.deployment_target = '8.0'
-  s.watchos.deployment_target = '2.0'   
+  s.osx.deployment_target = '10.9'
+  s.tvos.deployment_target = '9.0'  
 
   s.source_files = 'RHBSnippets.h'
   s.public_header_files = 'RHBSnippets.h'
