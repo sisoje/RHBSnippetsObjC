@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBSnippetsObjC'
-  s.version          = '0.2.2'
-  s.summary          = 'Snippets for singleton, UIColor from RGB and others.'
+  s.version          = '0.2.4'
+  s.summary          = 'Snippets for singleton, UIColor, CGFloat math and others.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,11 +28,12 @@ Red hot bits snippets for singleton, UIColor from RGB and others.
   s.source           = { :git => 'https://github.com/sisoje/RHBSnippetsObjC.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/redhotbits'
 
-  s.platforms = { :ios => '8.0', :osx => '10.7', :watchos => '2.0', :tvos => '9.0' }
+  s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '2.0'
+  s.osx.deployment_target = '10.7'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'RHBSnippets.h'
   s.public_header_files = 'RHBSnippets.h'
 
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
