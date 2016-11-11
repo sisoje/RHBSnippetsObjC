@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBSnippetsObjC'
-  s.version          = '0.2.4'
-  s.summary          = 'Snippets for singleton, UIColor, CGFloat math and others.'
+  s.version          = '0.2.5'
+  s.summary          = 'Snippets for singleton and UIColor, others to come...'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Red hot bits snippets for singleton, UIColor from RGB and others.
+Red hot bits snippets for singleton and UIColor from RGB and others.
                        DESC
 
   s.homepage         = 'https://github.com/sisoje/RHBSnippetsObjC'

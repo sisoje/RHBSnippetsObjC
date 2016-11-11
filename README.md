@@ -33,26 +33,7 @@ You just add this one line:
 	
 	/// init and other methods ...
 
-### CGFloat madness [solved]
-
-CGFloat is ```float``` on 32-bit platforms, and its ```double``` on 64-bit platforms.
-There is one main macro for you to use:
-		
-		RHB_CG_FLOAT(0.5) translates to '0.5' or '0.5f' depending on the platform
-		RHB_CG_FLOAT(ceil) translates to 'ceil' or 'ceilf' depending on the platform
-		
-Now you can use math functions ```ceil``` like:
-
-		CGFloat xCeil = RHB_CG_FLOAT(ceil)(x)
-		
-Or you can define your custom macros:
-
-		#define ceilcg RHB_CG_FLOAT(ceil)
-		/// ...
-		CGFloat xCeil = ceilcg(x)
-		
-		
-Now you can write warning free code. Make sure to turn on as many compile warnings as possible.
+There is also macro to make an UIColor from (hex) color refferences.
 
 ## Example
 
