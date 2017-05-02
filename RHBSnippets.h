@@ -34,6 +34,9 @@
 #define RHB_UICOLOR_FROM_RGB(RGB) [UIColor colorWithRed:(((RGB) >> 16) & 0xFF) / (CGFloat)255 green:(((RGB) >> 8) & 0xFF) / (CGFloat)255 blue:((RGB) & 0xFF) / (CGFloat)255 alpha:1]
 
 //bundle
-#define RHB_SUBSPEC_BUNDLE_WITH_CLASSNAME(CLASSNAME, SUBSPECNAME) [NSBundle bundleWithURL:[[NSBundle bundleForClass:[CLASSNAME class]].bundleURL URLByAppendingPathComponent:[SUBSPECNAME stringByAppendingPathExtension:@"bundle"]]]
+#define RHB_SUBSPEC_BUNDLE(CLASSNAME, SUBSPECNAME) [NSBundle bundleWithURL:[[NSBundle bundleForClass:[CLASSNAME class]].bundleURL URLByAppendingPathComponent:[SUBSPECNAME stringByAppendingPathExtension:@"bundle"]]]
+
+//core data model
+#define RHB_MANAGED_OBJECT_MODEL(BUNDLE, MODELNAME) [[NSManagedObjectModel alloc] initWithContentsOfURL:[BUNDLE URLForResource:MODELNAME withExtension:@"momd"]]
 
 #endif
