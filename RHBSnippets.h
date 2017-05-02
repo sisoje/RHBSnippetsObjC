@@ -34,8 +34,6 @@
 #define RHB_UICOLOR_FROM_RGB(RGB) [UIColor colorWithRed:(((RGB) >> 16) & 0xFF) / (CGFloat)255 green:(((RGB) >> 8) & 0xFF) / (CGFloat)255 blue:((RGB) & 0xFF) / (CGFloat)255 alpha:1]
 
 //bundle
-#define RHB_SUBSPEC_BUNDLE_WITH_CLASSBUNDLE(CLASSBUNDLE, SUBSPECNAME) [NSBundle bundleWithURL:[CLASSBUNDLE.bundleURL URLByAppendingPathComponent:[SUBSPECNAME stringByAppendingPathExtension:@"bundle"]]]
-#define RHB_SUBSPEC_BUNDLE_WITH_CLASSNAME(CLASSNAME, SUBSPECNAME) RHB_SUBSPEC_BUNDLE_WITH_CLASSBUNDLE([NSBundle bundleForClass:[CLASSNAME class]], SUBSPECNAME)
-#define RHB_SUBSPEC_BUNDLE_FOR_SELF(SUBSPECNAME) RHB_SUBSPEC_BUNDLE_WITH_CLASSNAME(self, SUBSPECNAME)
+#define RHB_SUBSPEC_BUNDLE_WITH_CLASSNAME(CLASSNAME, SUBSPECNAME) [NSBundle bundleWithURL:[[NSBundle bundleForClass:[CLASSNAME class]].bundleURL URLByAppendingPathComponent:[SUBSPECNAME stringByAppendingPathExtension:@"bundle"]]]
 
 #endif
