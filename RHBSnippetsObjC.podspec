@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RHBSnippetsObjC'
-  s.version          = '0.2.7'
+  s.version          = '0.2.7.1'
   s.summary          = 'Snippets for singleton and UIColor, others to come...'
 
 # This description is used to generate tags and improve search results.

@@ -36,7 +36,7 @@
     UIWindow *ALERTWINDOW = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];\
     [ALERTWINDOW makeKeyAndVisible];\
     ALERTWINDOW.rootViewController = [UIViewController new];\
-    [ALERTWINDOW.rootViewController presentViewController:VIEWCONTROLLER animated:NO completion:nil];\}
+    [ALERTWINDOW.rootViewController presentViewController:VIEWCONTROLLER animated:NO completion:nil];}
 
 
 // ui
