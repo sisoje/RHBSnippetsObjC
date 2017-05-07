@@ -31,12 +31,12 @@
 #define RHB_EXECUTE_BLOCK(BLOCK) if (BLOCK) BLOCK
 
 // allert controller madness
-#define RHB_MESSAGE_BOX(TITLE, MESSAGE, BUTTONTEXT) {UIAlertController *VIEWCONTROLLER = [UIAlertController alertControllerWithTitle:TITLE message:MESSAGE preferredStyle:UIAlertControllerStyleAlert];\
-    [VIEWCONTROLLER addAction:[UIAlertAction actionWithTitle:BUTTONTEXT style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {[VIEWCONTROLLER dismissViewControllerAnimated:YES completion:nil];}]];\
+#define RHB_MESSAGE_BOX(TITLE, MESSAGE, BUTTONTEXT) {UIAlertController *ALERTCONTROLLER = [UIAlertController alertControllerWithTitle:TITLE message:MESSAGE preferredStyle:UIAlertControllerStyleAlert];\
+    [ALERTCONTROLLER addAction:[UIAlertAction actionWithTitle:BUTTONTEXT style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {[ALERTCONTROLLER dismissViewControllerAnimated:YES completion:nil];}]];\
     UIWindow *ALERTWINDOW = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];\
     [ALERTWINDOW makeKeyAndVisible];\
     ALERTWINDOW.rootViewController = [UIViewController new];\
-    [ALERTWINDOW.rootViewController presentViewController:VIEWCONTROLLER animated:NO completion:nil];}
+    [ALERTWINDOW.rootViewController presentViewController:ALERTCONTROLLER animated:NO completion:nil];}
 
 
 // ui
