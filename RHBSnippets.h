@@ -30,6 +30,15 @@
 // blocks
 #define RHB_EXECUTE_BLOCK(BLOCK) if (BLOCK) BLOCK
 
+// allert controller madness
+#define RHB_MESSAGE_BOX(TITLE, MESSAGE, BUTTONTEXT) {UIAlertController *VIEWCONTROLLER = [UIAlertController alertControllerWithTitle:TITLE message:MESSAGE preferredStyle:UIAlertControllerStyleAlert];\
+    [VIEWCONTROLLER addAction:[UIAlertAction actionWithTitle:BUTTONTEXT style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {[VIEWCONTROLLER dismissViewControllerAnimated:YES completion:nil];}]];\
+    UIWindow *ALERTWINDOW = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];\
+    [ALERTWINDOW makeKeyAndVisible];\
+    ALERTWINDOW.rootViewController = [UIViewController new];\
+    [ALERTWINDOW.rootViewController presentViewController:VIEWCONTROLLER animated:NO completion:nil];\}
+
+
 // ui
 #define RHB_UICOLOR_FROM_RGB(RGB) [UIColor colorWithRed:(((RGB) >> 16) & 0xFF) / (CGFloat)255 green:(((RGB) >> 8) & 0xFF) / (CGFloat)255 blue:((RGB) & 0xFF) / (CGFloat)255 alpha:1]
 
@@ -39,4 +48,4 @@
 //core data model
 #define RHB_MANAGED_OBJECT_MODEL(BUNDLE, MODELNAME) [[NSManagedObjectModel alloc] initWithContentsOfURL:[BUNDLE URLForResource:MODELNAME withExtension:@"momd"]]
 
-#endif
+#endif //RHB_SNIPPETS_H_
